@@ -40,6 +40,7 @@ const BASE_URLS = [
   'https://api.abcz.workers.dev/api/bazardor'
 ];
 
+// Helper function to fetch data from API with fallback support
 async function fetchFromApi<T>(endpoint: string): Promise<T> {
   let lastError: any = null;
   for (const baseUrl of BASE_URLS) {
