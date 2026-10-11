@@ -2,7 +2,6 @@
 
 const bengaliDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
 
-// Convert English digits to Bengali numerals
 export function toBengaliNumber(number: number | string | undefined | null): string {
   if (number === undefined || number === null) return '০';
   const str = number.toString();
